@@ -1,0 +1,39 @@
+{% include "header.html" %}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="row-12"style="height:800px;background-color:blue;">
+            <div style="height:400px;width:400px;background-color:white;margin-top:50px;margin-bottom:70px;margin-left:500px">
+                
+                    <center>
+            <table> 
+                <form method="POST" encytype="multipart/form-date">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-sm-12" style="height:50px;width:400px;background-color:red;color:darkblack;margin-left:12px;padding-top:10px;font-size:20px;margin-bottom:50px;">ENTER REQUIRED BOOK DATA</div>
+                    
+                    </div>
+                    <tr>
+                        <td>STUD_ID</td><td><input type="text" class="form-control"  name="stud" placeholder="enter your student_id" required style="margin-bottom:20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>BOOK_NAME</td><td><input type="text" class="form-control"  name="book" placeholder="enter book " required style="margin-bottom:20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>AUTHER_NAME</td><td><input type="text" class="form-control"  name="auther" placeholder="enter auther name" required style="margin-bottom:20px;"></td>
+                    </tr>
+                    
+                    <tr>
+                       <td></td> <td><input type="submit" name="sub" value="SUBMIT"></td>
+                    </tr>
+                </form>
+            </table>
+        </center>
+        
+    </div>
+
+        </div>
+    </div>
+</div>
+{% include "footer.html" %}

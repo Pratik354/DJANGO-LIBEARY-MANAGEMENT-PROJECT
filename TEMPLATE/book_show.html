@@ -1,0 +1,38 @@
+{% include "header.html" %}
+
+<div class="container-fluid">
+<div class="row" >
+	<div class="col-12" style="background-color:blue;">
+
+
+<center>
+    <table border='2' style="margin-top:100px;width:1000px;margin-bottom:300px;font-size:20px;background-color:white;">
+        <tr>
+            <th>ID</th>
+            <th>STUDENT_ID</th>
+            <th>BOOK_NAME</th>
+            <th>AUTHER_NAME</th>
+            <th>DATE & TIME</th>
+            <th>STATUS</th>
+           
+
+        </tr>
+        {% for d in data%}
+        <tr style="color:black;">
+            <td>{{d.id}}</td>
+            <td>{{d.stud_id}}</td>
+            <td>{{d.book_name}}</td>
+            <td>{{d.auther_name}}</td>
+            <td>{{d.date}}</td>
+            <td>{{d.status}}</td>
+           
+
+        </tr>
+        {% endfor %}
+    </table>
+ 
+</center>
+</div>
+</div>
+</div>
+{% include "footer.html" %}

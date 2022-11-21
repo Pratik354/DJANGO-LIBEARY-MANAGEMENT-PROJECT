@@ -1,0 +1,74 @@
+{% include "header.html" %}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="row-12"style="height:800px;background-color:blue;">
+            <div style="height:700px;width:400px;background-color:white;margin-top:50px;margin-bottom:70px;margin-left:500px">
+                
+                    <center>
+            <table> 
+                <form method="POST" encytype="multipart/form-date">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-sm-12" style="height:50px;width:400px;background-color:red;color:darkblack;margin-left:12px;padding-top:10px;font-size:20px;margin-bottom:50px;">PROFILE DETAILS</div>
+                    
+                    </div>
+                    <tr>
+                        <td>STUD_ID</td><td><input type="text" class="form-control"  name="stud" placeholder="enter your mobile number" required style="margin-bottom:20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>EMAIL</td><td><input type="email" class="form-control"  name="mail" placeholder="enter your mobile number" required style="margin-bottom:20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>NUMBER</td><td><input type="number" class="form-control"  name="num" placeholder="enter your mobile number" required style="margin-bottom:20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>DOB</td><td><input type="date" class="form-control"  name="dob"  required style="margin-bottom:20px;"></td>
+                    </tr>
+                    <tr>
+                        <td>GENDER</td><td><select class="form-select" id="validationCustom04"name="gender" required style="margin-bottom:20px;">
+                            <option selected disabled value="">Choose...</option>
+                            <option>MALE</option>
+                            <option>FEMALE</option>
+                          </select></td>
+                    </tr>
+                    <tr>
+                        <td>BRANCH</td><td><select class="form-select" id="validationCustom04"name="branch" required style="margin-bottom:20px;">
+                            <option selected disabled value="">Choose...</option>
+                            <option>MECHANICAL</option>
+                            <option>CIVIL</option>
+                            <option>COMPUTER</option>
+                            <option>ELECTRICAL</option>
+                          </select></td>
+                    </tr>
+                    <tr>
+                        <td>SEMISTER</td><td><select class="form-select" id="validationCustom04"name="semister" required style="margin-bottom:20px;">
+                            <option selected disabled value="">Choose...</option>
+                            <option>1st</option>
+                            <option>2nd</option>
+                            <option>3rd</option>
+                            <option>4th</option>
+                            <option>5th</option>
+                            <option>6th</option>
+                            <option>7th</option>
+                            <option>8th</option>
+                            
+                          </select></td>
+                    </tr>
+                    <tr>
+                        <td>IMAGE</td><td><input type="file" class="form-control"  name="img" style="margin-bottom:20px;"></td>
+                    </tr>
+                    <tr>
+                       <td></td> <td><input type="submit" name="sub" value="SUBMIT"></td>
+                    </tr>
+                </form>
+            </table>
+        </center>
+        
+    </div>
+
+        </div>
+    </div>
+</div>
+{% include "footer.html" %}

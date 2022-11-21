@@ -1,0 +1,46 @@
+{% include "header.html" %}
+
+<div class="container-fluid">
+<div class="row" >
+	<div class="col-12" style="height:600px;background-color:blue;">
+
+
+<center>
+ <div style="height:400px;width:350px;background-color:white;margin-top:70px;color:darkblack;">
+	<table>
+	<form method ="POST">
+		
+		{% csrf_token %}
+		
+<div class="row">
+	<div class="col-sm-12" style="height:50px;width:350px;background-color:red;color:darkblack;margin-left:12px;padding-top:10px;font-size:20px">USER LOGIN</div>
+
+</div>
+	  <tr>
+		
+		<td><input type="text" name="username" placeholder="Enter your username" required style="margin-top:40px;margin-bottom:20px;"></td>
+	  </tr>
+	 
+	  
+	  <tr>
+		<td><input type="password" name="password" placeholder="Enter your password" required style="margin-bottom:20px;"></td>
+	  </tr>
+	  
+	  <tr>
+	 <td> <button type="submit" style="background-color:blue;height:40px;width:200px;color:white;border-radius:30px;">Login</button></td>
+	  </tr>
+	  <br>
+	  <tr>
+		<td><a href="{% url 'register'%}">Sign up hear</a></td>
+		</tr>
+	</form>
+
+
+</table>
+</div>
+</center>
+</div>
+</div>
+</div>
+
+{% include "footer.html" %}

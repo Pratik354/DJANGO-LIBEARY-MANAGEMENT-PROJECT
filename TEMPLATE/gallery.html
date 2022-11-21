@@ -1,0 +1,21 @@
+{% include "header.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div col="12" style="background-color:blue;">
+            
+    
+    
+        {%for d in img%}
+        <div class="col-sm-4" style="height:200px; width:200px;float:left;">
+            <div class="card m-2" >
+            <img src="{{d.IMAGE.url}}"class="card-img-top" >
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+{% endblock %}
+{% include "footer.html" %}

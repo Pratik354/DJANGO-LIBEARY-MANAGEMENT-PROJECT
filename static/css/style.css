@@ -1,0 +1,32 @@
+
+.body{
+    padding: 0px;
+    margin: 0px;
+}
+#row{
+    height:540px;
+    width:100%;
+    border:solid;
+    border-color: #ff0000;
+    
+    
+}
+#search{
+    margin-left: 700px;
+    
+}
+#nav{
+    padding-bottom: 20px;
+}
+#ul{
+    padding-top: 10px;
+    font-size: 20px;
+}
+#login{
+    
+    border:solid;
+    border-color:rgba(rgb(206, 18, 18)(206, 18, 18), green, blue, alpha);
+}
+
+
+

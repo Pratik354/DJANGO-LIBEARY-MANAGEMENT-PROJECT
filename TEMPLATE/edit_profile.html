@@ -1,0 +1,36 @@
+{% include "header.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div col="12" style="height:1000px;background-color:blue;">>
+
+
+<center>
+
+<form method="POST" action="" encytype="multipart/form-date">
+	<h2 class ="text-center"> Edit Profile </h2>
+		{% csrf_token %}
+		<div class="row">
+			<div class="col-6" style="height:450px;width:400px;margin-left:300px;background-color:white;padding-top:50px">
+		{% for fm in u_form %}
+			{{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br><br>
+			{% endfor %}
+			</div>
+			<div class="col-6" style="height:450px;width:400px;background-color:white;padding-top:50px" >
+		{{p_form.as_p}}
+			</div>
+		</div>
+		
+
+		
+
+
+	
+	</form>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
+{% include "footer.html" %}

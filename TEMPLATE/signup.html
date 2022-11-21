@@ -1,0 +1,48 @@
+{% include "header.html" %}
+
+<div class="container-fluid">
+<div class="row" >
+	<div class="col-12" style="height:700px;background-color:blue;">
+
+
+<center>
+ <div style="height:600px;width:400px;background-color:white;margin-top:50px;padding-top:50px;margin-bottom:70px;">
+	<div style='height:700px;width:350px;'>
+	<table>
+		
+		
+<form method="POST" action="{% url 'register' %}">
+	{% csrf_token %}
+
+	
+	<h3>Create Account</h3>
+		   
+
+		   {% for fm in forms%}
+			   
+			{{ fm.label_tag }} {{fm}} {{fm.error|striptags}}
+			
+			   
+
+			   {% endfor %}
+
+
+
+<br>
+
+
+	
+
+
+	<input type="submit" value="Register" class=" btn btn-secondary">
+</form>
+
+</table>
+
+</div>
+</div>
+</center>
+</div>
+</div>
+</div>
+{% include "footer.html" %}
